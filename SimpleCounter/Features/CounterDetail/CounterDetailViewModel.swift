@@ -1,6 +1,7 @@
 import Foundation
 import Observation
 import SimpleCounterCore
+import WidgetKit
 
 @Observable
 final class CounterDetailViewModel {
@@ -46,6 +47,7 @@ final class CounterDetailViewModel {
             let entry = CountEntry(counterID: counter.id, delta: delta)
             try entryRepository.insert(entry)
             reload()
+            WidgetCenter.shared.reloadAllTimelines()
         } catch {
             errorMessage = error.localizedDescription
         }
