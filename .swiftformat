@@ -1,0 +1,7 @@
+--indent 4
+--maxwidth 120
+--wraparguments before-first
+--importgrouping testable-last
+--semicolons never
+--trailingCommas always
+--swift-version 5.9

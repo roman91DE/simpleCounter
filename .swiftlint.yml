@@ -1,0 +1,29 @@
+excluded:
+  - .spm-cache
+  - Packages/SimpleCounterCore/.build
+  - Packages/SimpleCounterCore/Package.swift
+  - SimpleCounter.xcodeproj
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - closure_spacing
+  - overridden_super_call
+  - force_unwrapping
+
+force_cast: error
+force_try: error
+force_unwrapping: error
+
+line_length:
+  warning: 120
+  error: 200
+
+function_body_length:
+  warning: 50
+
+cyclomatic_complexity:
+  warning: 10
+
+identifier_name:
+  min_length: 1

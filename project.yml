@@ -1,0 +1,92 @@
+name: SimpleCounter
+options:
+  bundleIdPrefix: com.romanhorvath
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  groupSortPosition: top
+  generateEmptyDirectories: true
+
+packages:
+  SimpleCounterCore:
+    path: Packages/SimpleCounterCore
+
+targets:
+
+  SimpleCounter:
+    type: application
+    platform: iOS
+    sources:
+      - path: SimpleCounter
+    dependencies:
+      - package: SimpleCounterCore
+    info:
+      path: SimpleCounter/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: Simple Counter
+        UILaunchScreen: {}
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: false
+    entitlements:
+      path: SimpleCounter/Resources/SimpleCounter.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.romanhorvath.simplecounter
+    settings:
+      base:
+        SWIFT_VERSION: "5.9"
+        DEVELOPMENT_TEAM: ""
+        PRODUCT_BUNDLE_IDENTIFIER: com.romanhorvath.simplecounter
+
+  SimpleCounterWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: SimpleCounterWidget
+    dependencies:
+      - package: SimpleCounterCore
+    info:
+      path: SimpleCounterWidget/Info.plist
+      properties:
+        CFBundleDisplayName: Simple Counter Widget
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: SimpleCounterWidget/SimpleCounterWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.romanhorvath.simplecounter
+    settings:
+      base:
+        SWIFT_VERSION: "5.9"
+        DEVELOPMENT_TEAM: ""
+        PRODUCT_BUNDLE_IDENTIFIER: com.romanhorvath.simplecounter.widget
+
+  SimpleCounterUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: SimpleCounterUITests
+    dependencies:
+      - target: SimpleCounter
+    settings:
+      base:
+        SWIFT_VERSION: "5.9"
+
+schemes:
+  SimpleCounter:
+    build:
+      targets:
+        SimpleCounter: all
+        SimpleCounterWidget: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - SimpleCounterUITests
+    profile:
+      config: Release
+    archive:
+      config: Release
+

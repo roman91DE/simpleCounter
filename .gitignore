@@ -1,0 +1,22 @@
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcshareddata/
+xcuserdata/
+DerivedData/
+*.xccheckout
+*.xcscmblueprint
+.DS_Store
+
+# Swift Package Manager
+.build/
+.spm-cache/
+Packages/SimpleCounterCore/.build/
+Package.resolved
+
+# SwiftLint / SwiftFormat
+.swiftlint.yml.bak
+
+# Generated
+*.ipa
+*.dSYM.zip
+*.dSYM

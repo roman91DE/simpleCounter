@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1989BD3C863A9FB37C889B6D /* SimpleCounterCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2EAE02B598FA204A5E6E191B /* SimpleCounterCore */; };
+		28112FB53A50B994586B0E46 /* CounterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5288927A543F954614A3619D /* CounterListView.swift */; };
+		3FD272FFF1C1BBFE0385FB35 /* SimpleCounterCore in Frameworks */ = {isa = PBXBuildFile; productRef = D8FF6162E4D134CADDD4DA3B /* SimpleCounterCore */; };
+		4B9012B10BA3E32ABD5CDE72 /* CounterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9583DCED499DC394304839 /* CounterListViewModel.swift */; };
+		6E6E0996876041F9B489D800 /* CounterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55939B7D722E8DB2BD585F6A /* CounterCardView.swift */; };
+		71666EFAEB87EDF4AF2FACC2 /* SimpleCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB5A496995E83773F0062C /* SimpleCounterApp.swift */; };
+		74E8604ECC7EB05BDF25DB8F /* CounterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AAF6AACAEF3A044FDBB3D /* CounterIntent.swift */; };
+		7DD52A8D8D2F6E7A9337F052 /* CounterFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332F638D7D17EB6DEFC3CB57 /* CounterFlowUITests.swift */; };
+		7F3902F505863200728F2B90 /* SimpleCounterWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A715E03176C62D57EE5E1 /* SimpleCounterWidgetBundle.swift */; };
+		8DC474F29CD06618197B12F0 /* CounterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C8DEC7F22C06CF147419 /* CounterDetailViewModel.swift */; };
+		9FF6A7C7138A82AC5E25451D /* AddEditCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF49CF428FE0F48DBD3200 /* AddEditCounterView.swift */; };
+		AB83D613BA83158450098C02 /* HistoryChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A963C6754160AE31BCE0CDC /* HistoryChartView.swift */; };
+		B42AB544925B2A51B054C65F /* CounterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CFE28DC17C2AD0F68EC249 /* CounterDetailView.swift */; };
+		B473E2D998F73F605CF0D8FD /* CounterWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69513D703A05309F7022FFDE /* CounterWidgetEntry.swift */; };
+		C2DA9BCC88BC574395F25858 /* CounterWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080C5D6B743D0C0BA17A1DC /* CounterWidgetProvider.swift */; };
+		D04C4F98704556CCE4BE4227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E8DE7877DBDFEC08C28C32 /* Assets.xcassets */; };
+		E7E0FCD9D6CCD9EF3F59D8AF /* CounterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D3CE91735B9CC8E14132 /* CounterWidget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		848CF06D657146AD7F2158DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD78CDD1885DDE8281AB8F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B6A9DC714EBBF344A0B8FE6;
+			remoteInfo = SimpleCounter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		116A715E03176C62D57EE5E1 /* SimpleCounterWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCounterWidgetBundle.swift; sourceTree = "<group>"; };
+		18BF49CF428FE0F48DBD3200 /* AddEditCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCounterView.swift; sourceTree = "<group>"; };
+		1974E5BC3D6D22A1D5676B40 /* SimpleCounter.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SimpleCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB3B07F4BA43F7E68548D33 /* SimpleCounterWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleCounterWidget.entitlements; sourceTree = "<group>"; };
+		332F638D7D17EB6DEFC3CB57 /* CounterFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFlowUITests.swift; sourceTree = "<group>"; };
+		5288927A543F954614A3619D /* CounterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListView.swift; sourceTree = "<group>"; };
+		55939B7D722E8DB2BD585F6A /* CounterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCardView.swift; sourceTree = "<group>"; };
+		55E86956F48A00E496826BDE /* SimpleCounterCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SimpleCounterCore; path = Packages/SimpleCounterCore; sourceTree = SOURCE_ROOT; };
+		6088856FE8D4244A28B51D79 /* SimpleCounterWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = SimpleCounterWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FB5A496995E83773F0062C /* SimpleCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCounterApp.swift; sourceTree = "<group>"; };
+		69513D703A05309F7022FFDE /* CounterWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterWidgetEntry.swift; sourceTree = "<group>"; };
+		6A963C6754160AE31BCE0CDC /* HistoryChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryChartView.swift; sourceTree = "<group>"; };
+		7E995501F46C112B83945E6B /* SimpleCounterUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SimpleCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88CFE28DC17C2AD0F68EC249 /* CounterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDetailView.swift; sourceTree = "<group>"; };
+		9BC343B5DB6DA19529D936CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9F38C8DEC7F22C06CF147419 /* CounterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDetailViewModel.swift; sourceTree = "<group>"; };
+		AB241FFA4976826501ECEBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B080C5D6B743D0C0BA17A1DC /* CounterWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterWidgetProvider.swift; sourceTree = "<group>"; };
+		B61AAF6AACAEF3A044FDBB3D /* CounterIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterIntent.swift; sourceTree = "<group>"; };
+		DD0C47B27B55F0943813B980 /* SimpleCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleCounter.entitlements; sourceTree = "<group>"; };
+		E000D3CE91735B9CC8E14132 /* CounterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterWidget.swift; sourceTree = "<group>"; };
+		EA9583DCED499DC394304839 /* CounterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewModel.swift; sourceTree = "<group>"; };
+		F9E8DE7877DBDFEC08C28C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A91D0713926B613CE5C91A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD272FFF1C1BBFE0385FB35 /* SimpleCounterCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		593C7A3AEAC5E5C614E32E14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1989BD3C863A9FB37C889B6D /* SimpleCounterCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		139B64B5E145ACBA116A9634 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				487521611B253607D51EB4CE /* AddEditCounter */,
+				BF362307BD4F95849DBA6C3A /* CounterDetail */,
+				6AEF3515B6CF1B1768B260EC /* CounterList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1B8911D02E90EF25A711F2BE = {
+			isa = PBXGroup;
+			children = (
+				E551F092584A1E0A747C2BEB /* Packages */,
+				E6F6A75B1B8366C3D868D1E4 /* SimpleCounter */,
+				C954CA462C54B7C1460EC033 /* SimpleCounterUITests */,
+				EFDF14EBF281EC923FB8BE80 /* SimpleCounterWidget */,
+				D4D259F256E0F508B61E0EA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		487521611B253607D51EB4CE /* AddEditCounter */ = {
+			isa = PBXGroup;
+			children = (
+				18BF49CF428FE0F48DBD3200 /* AddEditCounterView.swift */,
+			);
+			path = AddEditCounter;
+			sourceTree = "<group>";
+		};
+		6AEF3515B6CF1B1768B260EC /* CounterList */ = {
+			isa = PBXGroup;
+			children = (
+				55939B7D722E8DB2BD585F6A /* CounterCardView.swift */,
+				5288927A543F954614A3619D /* CounterListView.swift */,
+				EA9583DCED499DC394304839 /* CounterListViewModel.swift */,
+			);
+			path = CounterList;
+			sourceTree = "<group>";
+		};
+		A1E5ACE105C877F3E34A7A87 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				61FB5A496995E83773F0062C /* SimpleCounterApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BF362307BD4F95849DBA6C3A /* CounterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				88CFE28DC17C2AD0F68EC249 /* CounterDetailView.swift */,
+				9F38C8DEC7F22C06CF147419 /* CounterDetailViewModel.swift */,
+				6A963C6754160AE31BCE0CDC /* HistoryChartView.swift */,
+			);
+			path = CounterDetail;
+			sourceTree = "<group>";
+		};
+		C0E71B3791E70709FF47A10A /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				B61AAF6AACAEF3A044FDBB3D /* CounterIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		C954CA462C54B7C1460EC033 /* SimpleCounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				332F638D7D17EB6DEFC3CB57 /* CounterFlowUITests.swift */,
+			);
+			path = SimpleCounterUITests;
+			sourceTree = "<group>";
+		};
+		D4D259F256E0F508B61E0EA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1974E5BC3D6D22A1D5676B40 /* SimpleCounter.app */,
+				7E995501F46C112B83945E6B /* SimpleCounterUITests.xctest */,
+				6088856FE8D4244A28B51D79 /* SimpleCounterWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E551F092584A1E0A747C2BEB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				55E86956F48A00E496826BDE /* SimpleCounterCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		E6F6A75B1B8366C3D868D1E4 /* SimpleCounter */ = {
+			isa = PBXGroup;
+			children = (
+				A1E5ACE105C877F3E34A7A87 /* App */,
+				139B64B5E145ACBA116A9634 /* Features */,
+				F40707E7D75C642E15B61640 /* Resources */,
+			);
+			path = SimpleCounter;
+			sourceTree = "<group>";
+		};
+		EFDF14EBF281EC923FB8BE80 /* SimpleCounterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C0E71B3791E70709FF47A10A /* Intents */,
+				E000D3CE91735B9CC8E14132 /* CounterWidget.swift */,
+				69513D703A05309F7022FFDE /* CounterWidgetEntry.swift */,
+				B080C5D6B743D0C0BA17A1DC /* CounterWidgetProvider.swift */,
+				AB241FFA4976826501ECEBFD /* Info.plist */,
+				1AB3B07F4BA43F7E68548D33 /* SimpleCounterWidget.entitlements */,
+				116A715E03176C62D57EE5E1 /* SimpleCounterWidgetBundle.swift */,
+			);
+			path = SimpleCounterWidget;
+			sourceTree = "<group>";
+		};
+		F40707E7D75C642E15B61640 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9E8DE7877DBDFEC08C28C32 /* Assets.xcassets */,
+				9BC343B5DB6DA19529D936CF /* Info.plist */,
+				DD0C47B27B55F0943813B980 /* SimpleCounter.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DBCB0536E56531F672532FD /* SimpleCounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63AAD8DA870B09BDFF4F5BA0 /* Build configuration list for PBXNativeTarget "SimpleCounterUITests" */;
+			buildPhases = (
+				1AA711279948F3C9EE0EBA05 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81AEA164D47C2EA27F2F5E29 /* PBXTargetDependency */,
+			);
+			name = SimpleCounterUITests;
+			packageProductDependencies = (
+			);
+			productName = SimpleCounterUITests;
+			productReference = 7E995501F46C112B83945E6B /* SimpleCounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3AA8405F0B0B73532B0B17B3 /* SimpleCounterWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70A9AC7CB16850E6F2EE31A4 /* Build configuration list for PBXNativeTarget "SimpleCounterWidget" */;
+			buildPhases = (
+				F2E60D8EC4C68A70776E4767 /* Sources */,
+				1A91D0713926B613CE5C91A0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleCounterWidget;
+			packageProductDependencies = (
+				D8FF6162E4D134CADDD4DA3B /* SimpleCounterCore */,
+			);
+			productName = SimpleCounterWidget;
+			productReference = 6088856FE8D4244A28B51D79 /* SimpleCounterWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8B6A9DC714EBBF344A0B8FE6 /* SimpleCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E0AD7CAC5BB549B27CE41A2 /* Build configuration list for PBXNativeTarget "SimpleCounter" */;
+			buildPhases = (
+				478572120AF419B2ED7B1CD2 /* Sources */,
+				46D7FA9B53241FD3DF2E5739 /* Resources */,
+				593C7A3AEAC5E5C614E32E14 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleCounter;
+			packageProductDependencies = (
+				2EAE02B598FA204A5E6E191B /* SimpleCounterCore */,
+			);
+			productName = SimpleCounter;
+			productReference = 1974E5BC3D6D22A1D5676B40 /* SimpleCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD78CDD1885DDE8281AB8F8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					2DBCB0536E56531F672532FD = {
+						TestTargetID = 8B6A9DC714EBBF344A0B8FE6;
+					};
+					3AA8405F0B0B73532B0B17B3 = {
+						DevelopmentTeam = "";
+					};
+					8B6A9DC714EBBF344A0B8FE6 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 2D6F50C7605F083A24BC32D1 /* Build configuration list for PBXProject "SimpleCounter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 1B8911D02E90EF25A711F2BE;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				917110A651E24793C87A2149 /* XCLocalSwiftPackageReference "Packages/SimpleCounterCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B6A9DC714EBBF344A0B8FE6 /* SimpleCounter */,
+				2DBCB0536E56531F672532FD /* SimpleCounterUITests */,
+				3AA8405F0B0B73532B0B17B3 /* SimpleCounterWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46D7FA9B53241FD3DF2E5739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04C4F98704556CCE4BE4227 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AA711279948F3C9EE0EBA05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD52A8D8D2F6E7A9337F052 /* CounterFlowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		478572120AF419B2ED7B1CD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF6A7C7138A82AC5E25451D /* AddEditCounterView.swift in Sources */,
+				6E6E0996876041F9B489D800 /* CounterCardView.swift in Sources */,
+				B42AB544925B2A51B054C65F /* CounterDetailView.swift in Sources */,
+				8DC474F29CD06618197B12F0 /* CounterDetailViewModel.swift in Sources */,
+				28112FB53A50B994586B0E46 /* CounterListView.swift in Sources */,
+				4B9012B10BA3E32ABD5CDE72 /* CounterListViewModel.swift in Sources */,
+				AB83D613BA83158450098C02 /* HistoryChartView.swift in Sources */,
+				71666EFAEB87EDF4AF2FACC2 /* SimpleCounterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E60D8EC4C68A70776E4767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E8604ECC7EB05BDF25DB8F /* CounterIntent.swift in Sources */,
+				E7E0FCD9D6CCD9EF3F59D8AF /* CounterWidget.swift in Sources */,
+				B473E2D998F73F605CF0D8FD /* CounterWidgetEntry.swift in Sources */,
+				C2DA9BCC88BC574395F25858 /* CounterWidgetProvider.swift in Sources */,
+				7F3902F505863200728F2B90 /* SimpleCounterWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81AEA164D47C2EA27F2F5E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B6A9DC714EBBF344A0B8FE6 /* SimpleCounter */;
+			targetProxy = 848CF06D657146AD7F2158DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09BE0185F5D24CB12AA87ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleCounterWidget/SimpleCounterWidget.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SimpleCounterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romanhorvath.simplecounter.widget;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38E9C57DFAFF962AE6CC44FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleCounter/Resources/SimpleCounter.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SimpleCounter/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romanhorvath.simplecounter;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39E600C588D5780CE6402DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleCounter/Resources/SimpleCounter.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SimpleCounter/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romanhorvath.simplecounter;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BE1072DB37D2BC21C6B607A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleCounterWidget/SimpleCounterWidget.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SimpleCounterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romanhorvath.simplecounter.widget;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		533A479EAC655A835EDCE158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romanhorvath.SimpleCounterUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleCounter;
+			};
+			name = Release;
+		};
+		6E2F584D92B1BCEBE8E4B4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romanhorvath.SimpleCounterUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleCounter;
+			};
+			name = Debug;
+		};
+		956B887BDAFF7104DDA08B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C945D4B7F010B5287F97D4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D6F50C7605F083A24BC32D1 /* Build configuration list for PBXProject "SimpleCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C945D4B7F010B5287F97D4A5 /* Debug */,
+				956B887BDAFF7104DDA08B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		63AAD8DA870B09BDFF4F5BA0 /* Build configuration list for PBXNativeTarget "SimpleCounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2F584D92B1BCEBE8E4B4A9 /* Debug */,
+				533A479EAC655A835EDCE158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		70A9AC7CB16850E6F2EE31A4 /* Build configuration list for PBXNativeTarget "SimpleCounterWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BE0185F5D24CB12AA87ADB /* Debug */,
+				3BE1072DB37D2BC21C6B607A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9E0AD7CAC5BB549B27CE41A2 /* Build configuration list for PBXNativeTarget "SimpleCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E9C57DFAFF962AE6CC44FE /* Debug */,
+				39E600C588D5780CE6402DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		917110A651E24793C87A2149 /* XCLocalSwiftPackageReference "Packages/SimpleCounterCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/SimpleCounterCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2EAE02B598FA204A5E6E191B /* SimpleCounterCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SimpleCounterCore;
+		};
+		D8FF6162E4D134CADDD4DA3B /* SimpleCounterCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SimpleCounterCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CD78CDD1885DDE8281AB8F8F /* Project object */;
+}
