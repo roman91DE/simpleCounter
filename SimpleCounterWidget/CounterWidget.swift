@@ -89,7 +89,11 @@ struct CounterWidget: Widget {
     let kind = "CounterWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: CounterWidgetProvider()) { entry in
+        AppIntentConfiguration(
+            kind: kind,
+            intent: CounterConfigurationIntent.self,
+            provider: CounterWidgetProvider()
+        ) { entry in
             CounterWidgetView(entry: entry)
                 .containerBackground(.background, for: .widget)
         }

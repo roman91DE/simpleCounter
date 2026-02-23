@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050F359268D6508843791083 /* CounterConfigurationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBCABCA3DBC5F5CF6E3B8B5 /* CounterConfigurationIntent.swift */; };
 		1989BD3C863A9FB37C889B6D /* SimpleCounterCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2EAE02B598FA204A5E6E191B /* SimpleCounterCore */; };
 		1C2C293C486F61433F3C6202 /* SimpleCounterWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6088856FE8D4244A28B51D79 /* SimpleCounterWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		28112FB53A50B994586B0E46 /* CounterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5288927A543F954614A3619D /* CounterListView.swift */; };
 		3FD272FFF1C1BBFE0385FB35 /* SimpleCounterCore in Frameworks */ = {isa = PBXBuildFile; productRef = D8FF6162E4D134CADDD4DA3B /* SimpleCounterCore */; };
 		4B9012B10BA3E32ABD5CDE72 /* CounterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9583DCED499DC394304839 /* CounterListViewModel.swift */; };
+		5C0B05AFBECDC3891FD63BA4 /* CounterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61BC9A567D6AD8BCC8A0FB8 /* CounterEntity.swift */; };
 		6E6E0996876041F9B489D800 /* CounterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55939B7D722E8DB2BD585F6A /* CounterCardView.swift */; };
 		71666EFAEB87EDF4AF2FACC2 /* SimpleCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB5A496995E83773F0062C /* SimpleCounterApp.swift */; };
 		74E8604ECC7EB05BDF25DB8F /* CounterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AAF6AACAEF3A044FDBB3D /* CounterIntent.swift */; };
@@ -78,6 +80,8 @@
 		AB241FFA4976826501ECEBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B080C5D6B743D0C0BA17A1DC /* CounterWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterWidgetProvider.swift; sourceTree = "<group>"; };
 		B61AAF6AACAEF3A044FDBB3D /* CounterIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterIntent.swift; sourceTree = "<group>"; };
+		C61BC9A567D6AD8BCC8A0FB8 /* CounterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterEntity.swift; sourceTree = "<group>"; };
+		CBBCABCA3DBC5F5CF6E3B8B5 /* CounterConfigurationIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterConfigurationIntent.swift; sourceTree = "<group>"; };
 		DD0C47B27B55F0943813B980 /* SimpleCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleCounter.entitlements; sourceTree = "<group>"; };
 		E000D3CE91735B9CC8E14132 /* CounterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterWidget.swift; sourceTree = "<group>"; };
 		EA9583DCED499DC394304839 /* CounterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewModel.swift; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 		C0E71B3791E70709FF47A10A /* Intents */ = {
 			isa = PBXGroup;
 			children = (
+				CBBCABCA3DBC5F5CF6E3B8B5 /* CounterConfigurationIntent.swift */,
+				C61BC9A567D6AD8BCC8A0FB8 /* CounterEntity.swift */,
 				B61AAF6AACAEF3A044FDBB3D /* CounterIntent.swift */,
 			);
 			path = Intents;
@@ -374,6 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050F359268D6508843791083 /* CounterConfigurationIntent.swift in Sources */,
+				5C0B05AFBECDC3891FD63BA4 /* CounterEntity.swift in Sources */,
 				74E8604ECC7EB05BDF25DB8F /* CounterIntent.swift in Sources */,
 				E7E0FCD9D6CCD9EF3F59D8AF /* CounterWidget.swift in Sources */,
 				B473E2D998F73F605CF0D8FD /* CounterWidgetEntry.swift in Sources */,
