@@ -24,6 +24,11 @@ final class CounterListViewModel {
 
     // MARK: - Public
 
+    @MainActor
+    func refresh() {
+        reloadCounts(for: counters)
+    }
+
     func delete(_ counter: Counter) {
         do {
             try counterRepository.delete(counter)

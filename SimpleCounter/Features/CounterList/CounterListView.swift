@@ -5,6 +5,7 @@ struct CounterListView: View {
     @State var viewModel: CounterListViewModel
     @State private var showAddCounter = false
     @State private var counterToEdit: Counter?
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         NavigationStack {
@@ -36,6 +37,11 @@ struct CounterListView: View {
                     counterRepository: viewModel.counterRepository,
                     counterToEdit: counter
                 )
+            }
+            .onChange(of: scenePhase) { _, newPhase in
+                if newPhase == .active {
+                    viewModel.refresh()
+                }
             }
             .alert("Error", isPresented: Binding(
                 get: { viewModel.errorMessage != nil },
