@@ -20,6 +20,8 @@ targets:
       - path: SimpleCounter
     dependencies:
       - package: SimpleCounterCore
+      - target: SimpleCounterWidget
+        embed: true
     info:
       path: SimpleCounter/Resources/Info.plist
       properties:

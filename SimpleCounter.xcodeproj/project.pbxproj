@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1989BD3C863A9FB37C889B6D /* SimpleCounterCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2EAE02B598FA204A5E6E191B /* SimpleCounterCore */; };
+		1C2C293C486F61433F3C6202 /* SimpleCounterWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6088856FE8D4244A28B51D79 /* SimpleCounterWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		28112FB53A50B994586B0E46 /* CounterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5288927A543F954614A3619D /* CounterListView.swift */; };
 		3FD272FFF1C1BBFE0385FB35 /* SimpleCounterCore in Frameworks */ = {isa = PBXBuildFile; productRef = D8FF6162E4D134CADDD4DA3B /* SimpleCounterCore */; };
 		4B9012B10BA3E32ABD5CDE72 /* CounterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9583DCED499DC394304839 /* CounterListViewModel.swift */; };
@@ -34,7 +35,28 @@
 			remoteGlobalIDString = 8B6A9DC714EBBF344A0B8FE6;
 			remoteInfo = SimpleCounter;
 		};
+		AC18E56E7980626F84D0EB48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD78CDD1885DDE8281AB8F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AA8405F0B0B73532B0B17B3;
+			remoteInfo = SimpleCounterWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4066ADB511E99BAD82E38E75 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1C2C293C486F61433F3C6202 /* SimpleCounterWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		116A715E03176C62D57EE5E1 /* SimpleCounterWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCounterWidgetBundle.swift; sourceTree = "<group>"; };
@@ -254,10 +276,12 @@
 				478572120AF419B2ED7B1CD2 /* Sources */,
 				46D7FA9B53241FD3DF2E5739 /* Resources */,
 				593C7A3AEAC5E5C614E32E14 /* Frameworks */,
+				4066ADB511E99BAD82E38E75 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9102FBDC9D24C1DF52BEE622 /* PBXTargetDependency */,
 			);
 			name = SimpleCounter;
 			packageProductDependencies = (
@@ -365,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = 8B6A9DC714EBBF344A0B8FE6 /* SimpleCounter */;
 			targetProxy = 848CF06D657146AD7F2158DB /* PBXContainerItemProxy */;
+		};
+		9102FBDC9D24C1DF52BEE622 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AA8405F0B0B73532B0B17B3 /* SimpleCounterWidget */;
+			targetProxy = AC18E56E7980626F84D0EB48 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
